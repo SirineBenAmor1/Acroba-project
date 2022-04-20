@@ -1,0 +1,13 @@
+# Define goal's message
+type goal1
+type goal2
+---
+# Define result's message
+type result1
+type result2
+---
+# Define feedback's message
+type feedback1
+type feedback2
+
+#http://wiki.ros.org/actionlib
