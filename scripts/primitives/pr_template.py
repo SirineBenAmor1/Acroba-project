@@ -58,6 +58,13 @@ class PrimitiveName:
         # code
         ...
 
+    def pub_feedback_callback(self, data):
+        """
+        Callback to publish feedback message ... topic
+        """
+        self.feedback_.msg = data
+        self._as.publish_feedback(self.feedback)
+
     def class_method(self, input1, input2):
         """
         Method that does... with :
