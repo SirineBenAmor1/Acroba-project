@@ -19,6 +19,10 @@ http://wiki.ros.org/fr/ROS/Tutorials
     cd ..
     catkin_make
 
+Debug if you are using conda : 
+
+    catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8m
+
 # Turtlesim
 This workshop will be based on turtlesim. 
 The goal will be to develop several primitives to command the turtle basic movement and soms skills using those primitives for more complex tasks.
