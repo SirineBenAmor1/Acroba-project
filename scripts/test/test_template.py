@@ -22,7 +22,7 @@ def main():
 
     # define client
     client = actionlib.SimpleActionClient(
-        "Sever_name", skills.msg.ServeNameAction
+        "Sever_name", ACROBA_Workshop_SIGMA.msg.ServeNameAction
     )
     client.wait_for_server()
 
