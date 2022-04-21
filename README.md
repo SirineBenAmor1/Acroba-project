@@ -42,13 +42,13 @@ The published message will be a Twist from geometry_msgs that you need to import
 
     from geometry_msgs.msg import Twist
 
+This file can be stored on scripts/other/ folder.
 
 ## Step 2 - Write a basic primitive (with its .action and test files)
 
-Based on the pr_template file, implement your previously created code inside the primitive syntax.
+Based on the pr_template file (you can find it in script/primitives/ folder), implement your previously created code inside the primitive syntax.
 
-
-Based on the ActionTemplate.action, you also need to create a Move.action file.
+Based on the ActionTemplate.action (you can find it in action/ folder), you also need to create a Move.action file.
 When creating a new .action file it needs to be added to the CMakeLists here :
 
     ## Generate actions in the 'action' folder
@@ -91,7 +91,6 @@ An example of callback used to publish feedback is given in the pr_template.
 
 Based on the same syntax, create a pr_rotate primitive with its .action file to rotate the turtle. Test it with a test_rotate file
 
-
 ## Step 5 - Write a skill using both primitives
 
-Based on the sk_template syntax and the two primitives previously created, write a skill that will make the turtle patroling by repetitively moving and rotating.
+Based on the sk_template syntax (scripts/skills/ folder) and the two primitives previously created, write a skill that will make the turtle patroling by repetitively moving and rotating.
