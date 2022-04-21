@@ -35,7 +35,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_action_files(
    FILES
     # primitives
-    ActionTemplate.action
+    # ActionTemplate.action
     # skills
 
 )
