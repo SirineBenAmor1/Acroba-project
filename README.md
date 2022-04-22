@@ -21,7 +21,7 @@ http://wiki.ros.org/fr/ROS/Tutorials
     cd ..
     catkin_make
 
-If you are using conda or an other environment system you may need to source python paths while building, with the folowing command: 
+If you are using conda or an other environment system you may need to source python paths while building, with the following command: 
 
     catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8m
 
@@ -65,9 +65,7 @@ A Vector3 message is composed by 3 float like so :
 
 ## Step 2 - Write a basic primitive (with its .action and test files)
 
-Based on the pr_template file (you can find it under /script/primitives), implement your previously created code inside the primitive syntax.
-
-Based on the ActionTemplate.action (that you can find it under /action), you also need to create a Move.action file.
+Based on the ActionTemplate.action (you can find it under /action), you first need to create a Move.action file.
 When creating a new .action file it needs to be added to the CMakeLists here :
 
     ## Generate actions in the 'action' folder
@@ -80,9 +78,15 @@ When creating a new .action file it needs to be added to the CMakeLists here :
 
 Everytime you create a new .action file or modify an existing one you also need to build the package with catkin_make
 
+Then, based on the pr_template file (you can find it under /script/primitives), implement your previously created code inside the primitive syntax.
 
 To test it you need to create a client test file based on the test_template, that will send the goal to your primitive server.
+You can also send the goal by manually publish on the right topic through command line.
+For instance you can use 
 
+    rostopic pub /Move/goal
+
+then press Tab twice to autocomplete the message. Before pressing enter, change the default goal values to the desired ones.
 
 ## Step 3 - Improve the primitive
 
