@@ -32,8 +32,8 @@ The goal will be to develop several primitives to command the turtle basic movem
 You can have a look at the python code used in "9 - Practicing Python with Turtlesim" at
 http://wiki.ros.org/turtlesim/Tutorials
 
-reminder :
-Launching turtlesim node and spawning a turtle in the middle
+Reminder :
+To launch turtlesim node and spawn a turtle in the middle, use :
 
     rosrun turtlesim turtlesim_node
 
@@ -65,17 +65,17 @@ A Vector3 message is composed by 3 float like so :
 
 ## Step 2 - Write a basic primitive (with its .action and test files)
 
-Based on the pr_template file (you can find it in script/primitives/ folder), implement your previously created code inside the primitive syntax.
+Based on the pr_template file (you can find it under /script/primitives), implement your previously created code inside the primitive syntax.
 
-Based on the ActionTemplate.action (you can find it in action/ folder), you also need to create a Move.action file.
+Based on the ActionTemplate.action (that you can find it under /action), you also need to create a Move.action file.
 When creating a new .action file it needs to be added to the CMakeLists here :
 
     ## Generate actions in the 'action' folder
     add_action_files(
     FILES
-        # primitives
-        ActionTemplate.action
-        # skills
+        # primitives (add .action file for primitives below)
+        # ActionTemplate.action
+        # skills (add .action file for primitives skills)
     )
 
 Everytime you create a new .action file or modify an existing one you also need to build the package with catkin_make
@@ -86,13 +86,13 @@ To test it you need to create a client test file based on the test_template, tha
 
 ## Step 3 - Improve the primitive
 
-As we can spawn several turtle in turtlesim, we can add into the goal the name of the turtle we want to move.
+As we can spawn several turtles in turtlesim, we can add into the goal the name of the turtle we want to move.
 
 To spawn an new turtle we have to use a rosservice with a few arguments ('x', 'y', 'theta', 'name'), like so :
 
     rosservice call spawn 1 1 0 turtle2
 
-We also want to output as feddback the reached position. For this purpose we need to add a feedback message into the Move.action file, and to create a subscriber to the topic /$TURTLE_NAME$/pose and a callback function where the feedback will be published.
+We also want to output as feedback the reached position. For this purpose we need to add a feedback message into the Move.action file, and to create a subscriber to the topic /$TURTLE_NAME$/pose and a callback function where the feedback will be published.
 In turtlesim, pose messages are definied like so :
 
     turtlesim/Pose Message 
