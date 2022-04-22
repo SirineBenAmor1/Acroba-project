@@ -34,9 +34,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate actions in the 'action' folder
 add_action_files(
    FILES
-    # primitives
+    # primitives (add .action file for primitives below)
     # ActionTemplate.action
-    # skills
+    # skills  (add .action file for skills below)
 
 )
 
