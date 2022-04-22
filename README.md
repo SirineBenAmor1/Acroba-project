@@ -1,5 +1,7 @@
 # ACROBA_Workshop_SIGMA
-A Package for developers participating in the worshop conducted by SIGMA about ACROBA skills-primitives architecture
+A Package for developers participating in the worshop conducted by SIGMA about ACROBA skills-primitives architecture.
+
+A description of this architecture is detailled in Deliverable 2.3 - Part 2, which has also been copied in the Wiki of this package (https://github.com/bastienm23/ACROBA_Workshop_SIGMA/wiki).
 
 # Dependencies
 Developers that want to participate to this workshop should bring their personal computer with the following configuration ready :
@@ -19,7 +21,7 @@ http://wiki.ros.org/fr/ROS/Tutorials
     cd ..
     catkin_make
 
-Debug if you are using conda : 
+If you are using conda or an other environment system you may need to source python paths while building, with the folowing command: 
 
     catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8m
 
@@ -46,7 +48,20 @@ The published message will be a Twist from geometry_msgs that you need to import
 
     from geometry_msgs.msg import Twist
 
-This file can be stored on scripts/other/ folder.
+This file can be stored on /scripts/other folder.
+
+Reminders : 
+A Twist message is composed by two Vector3 like so :
+
+    geometry_msgs/Vector3 linear
+    geometry_msgs/Vector3 angular
+
+A Vector3 message is composed by 3 float like so :
+
+    float64 x
+    float64 y
+    float64 z
+
 
 ## Step 2 - Write a basic primitive (with its .action and test files)
 
