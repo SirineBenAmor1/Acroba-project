@@ -66,6 +66,10 @@ A Vector3 message is composed by 3 float like so :
 ## Step 2 - Write a basic primitive (with its .action and test files)
 
 Based on the ActionTemplate.action (you can find it under /action), you first need to create a Move.action file.
+This action file can be composed by 3 kind of message : goal, result and feedback. Results and feedback are non-mandatory.
+You can define several inputs in each messages, one per line, by declaring their type and their name. Each message are separated in the file by a line :
+    ---
+
 When creating a new .action file it needs to be added to the CMakeLists here :
 
     ## Generate actions in the 'action' folder
@@ -90,13 +94,14 @@ then press Tab twice to autocomplete the message. Before pressing enter, change 
 
 ## Step 3 - Improve the primitive
 
-As we can spawn several turtles in turtlesim, we can add into the goal the name of the turtle we want to move.
+As we can spawn several turtles in turtlesim, we can add as input in the goal the name of the turtle we want to move. For that you need to add a line in yournMove.action file file previously created. Doing will force you to re-build with catkin_make.
 
 To spawn an new turtle we have to use a rosservice with a few arguments ('x', 'y', 'theta', 'name'), like so :
 
     rosservice call spawn 1 1 0 turtle2
 
-We also want to output as feedback the reached position. For this purpose we need to add a feedback message into the Move.action file, and to create a subscriber to the topic /$TURTLE_NAME$/pose and a callback function where the feedback will be published.
+We also want to output as feedback the reached position. You will need to add a feedback message into the Move.action file and then re-build the package.
+We also need to create a subscriber to the topic /$TURTLE_NAME$/pose and a callback function where the feedback will be published.
 In turtlesim, pose messages are definied like so :
 
     turtlesim/Pose Message 
