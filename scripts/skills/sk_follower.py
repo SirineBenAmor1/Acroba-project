@@ -19,7 +19,7 @@ def follower_skill():
         # Temps écoulé depuis le départ du follower
         elapsed_time = time.time() - follower_start_time
         
-        if elapsed_time >= 1.0:
+        if elapsed_time >= 1.5:
             # Une fois que le follower a attendu 1 seconde, effectuer la translation
             twist.linear.x = 1.5  # Translation (déplacement en avant)
             
