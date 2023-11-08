@@ -1,0 +1,11 @@
+# The action goal for creating a rectangle
+string turtle_name
+float32 move_distance
+float32 move_speed
+float32 rotate_angle
+int32 repetitions
+---
+bool success
+---
+# Define feedback's message
+turtlesim/Pose pose

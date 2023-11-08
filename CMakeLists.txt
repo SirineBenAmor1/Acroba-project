@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(ACROBA_Workshop_SIGMA)
+project(acroba_workshop_sigma)
 
 ##The comments were excluded for cleaning purpose
 ##If you want aditional information check: http://wiki.ros.org/catkin/CMakeLists.txt
@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
   actionlib_msgs
+  turtlesim
   actionlib)
 
 
@@ -20,8 +21,8 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 #add_message_files(
-#   FILES
-#  moves.msg 
+  #FILES
+# moves.msg 
 #)
 
 ## Generate services in the 'srv' folder
@@ -34,6 +35,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate actions in the 'action' folder
 add_action_files(
    FILES
+   Move.action
+   rotate.action
+   PatrolSkill.action
     # primitives (add .action file for primitives below)
     # ActionTemplate.action
     # skills  (add .action file for skills below)
@@ -45,6 +49,7 @@ generate_messages(
    DEPENDENCIES
    actionlib_msgs
    geometry_msgs
+   turtlesim
 )
 
 #Since we are using custom messages and packages, we have to declare
@@ -110,6 +115,7 @@ include_directories(
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
-
+catkin_install_python(PROGRAMS move_forward.py scripts/pr_move.py scripts/pr_follow.py scripts/test_move.py scripts/test_rotate.py scripts/testfollow.py scripts/pr_rotate.py rotate.py skill_test.py scripts/sk_test.py scripts/skpatrol.py
+DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 
