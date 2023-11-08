@@ -1,0 +1,13 @@
+<launch>
+  <!-- Start Turtlesim -->
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen" />
+
+  <!-- Spawn Turtle 2 -->
+  <node name="spawn_turtle2" pkg="acroba_workshop_sigma" type="spawn_turtle.py" args="5.5 5.5 0 turtle2" output="screen" />
+
+  <!-- Start sk_leader.py -->
+  <node name="sk_leader_node" pkg="acroba_workshop_sigma" type="sk_leader.py" output="screen" />
+
+  <!-- Start sk_follower.py -->
+  <node name="sk_follower_node" pkg="acroba_workshop_sigma" type="sk_follower.py" output="screen" />
+</launch>

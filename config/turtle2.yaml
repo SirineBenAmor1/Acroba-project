@@ -1,0 +1,6 @@
+turtle2:
+  pose:
+    x: 2.0
+    y: 2.0
+    theta: 0.0
+  color: [255, 0, 0]

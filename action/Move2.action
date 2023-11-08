@@ -1,0 +1,10 @@
+#Define goal's message
+string turtle_name
+float32 speed
+string turtle_to_follow  
+float32 follow_distance  
+---
+#Define result's message
+---
+#Define feedback's message
+turtlesim/Pose pose

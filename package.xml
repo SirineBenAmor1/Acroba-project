@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ACROBA_Workshop_SIGMA</name>
+  <name>acroba_workshop_sigma</name>
   <version>0.0.0</version>
   <description>A Package for developers participating in the worshop conducted by SIGMA about ACROBA skills-primitives architecture</description>
   
@@ -64,6 +64,8 @@
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <!-- Other tools can request additional information be placed here -->
+    
+  <launch file="launch/start_turtlesim.launch" />
 
   </export>
 </package>
