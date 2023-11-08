@@ -1,0 +1,8 @@
+prefix=/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel
+
+Name: acroba_workshop_sigma
+Description: Description of acroba_workshop_sigma
+Version: 0.0.0
+Cflags: -I/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy

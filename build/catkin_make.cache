@@ -1,0 +1,2 @@
+acroba_workshop_sigma
+-DCATKIN_DEVEL_PREFIX=/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel -DCMAKE_INSTALL_PREFIX=/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/install -G Unix Makefiles
