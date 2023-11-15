@@ -237,71 +237,6 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
-
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
-
-# Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_py.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -365,6 +300,71 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 geometry_msgs_generate_messages_py/fast:
 	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make acroba_workshop_sigma/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_py.dir/build.make acroba_workshop_sigma/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_cpp
@@ -770,6 +770,279 @@ acroba_workshop_sigma_generate_messages/fast:
 .PHONY : acroba_workshop_sigma_generate_messages/fast
 
 #=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolAction
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolAction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolAction
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolAction
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolAction/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolAction.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolAction.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolAction/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowAction
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowAction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowAction
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowAction
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowAction/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowAction.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowAction.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowAction/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadAction
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadAction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadAction
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadAction
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadAction/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadAction.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadAction.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadAction/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback/fast
+
+#=============================================================================
 # Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_MoveAction
 
 # Build rule for target.
@@ -952,97 +1225,6 @@ _acroba_workshop_sigma_generate_messages_check_deps_Move2Feedback/fast:
 .PHONY : _acroba_workshop_sigma_generate_messages_check_deps_Move2Feedback/fast
 
 #=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateAction
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateAction: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateAction
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateAction
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateAction/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateAction.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateAction.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateAction/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateGoal
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateGoal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateGoal
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateGoal
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateGoal/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateGoal.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateGoal/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateResult
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateResult: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateResult
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateResult
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateResult/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateResult.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateResult/fast
-
-#=============================================================================
-# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback
-
-# Build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback
-
-# fast build rule for target.
-_acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback/fast:
-	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback.dir/build
-.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback/fast
-
-#=============================================================================
 # Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillAction
 
 # Build rule for target.
@@ -1132,6 +1314,97 @@ _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback: cmake_c
 _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback/fast:
 	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback.dir/build
 .PHONY : _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateAction
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateAction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateAction
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateAction
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateAction/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateAction.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateAction.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateAction/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateGoal
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateGoal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateGoal
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateGoal
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateGoal/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateGoal.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateGoal.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateGoal/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateResult
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateResult: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateResult
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateResult
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateResult/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateResult.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateResult.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateResult/fast
+
+#=============================================================================
+# Target rules for targets named _acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback
+
+# Build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback
+
+# fast build rule for target.
+_acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback/fast:
+	$(MAKE) $(MAKESILENT) -f acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback.dir/build.make acroba_workshop_sigma/CMakeFiles/_acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback.dir/build
+.PHONY : _acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback/fast
 
 #=============================================================================
 # Target rules for targets named acroba_workshop_sigma_generate_messages_cpp
@@ -1276,6 +1549,20 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowAction"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowActionFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowActionGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowActionResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_FollowResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadAction"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadActionFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadActionGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadActionResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_LeadResult"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_Move2Action"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_Move2ActionFeedback"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_Move2ActionGoal"
@@ -1290,6 +1577,13 @@ help:
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_MoveFeedback"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_MoveGoal"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_MoveResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolAction"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolActionResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolResult"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillAction"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillActionFeedback"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillActionGoal"
@@ -1297,13 +1591,13 @@ help:
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillFeedback"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillGoal"
 	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_PatrolSkillResult"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateAction"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateActionFeedback"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateActionGoal"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateActionResult"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateFeedback"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateGoal"
-	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_rotateResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateAction"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateActionFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateActionGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateActionResult"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateFeedback"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateGoal"
+	@echo "... _acroba_workshop_sigma_generate_messages_check_deps_RotateResult"
 	@echo "... acroba_workshop_sigma_gencpp"
 	@echo "... acroba_workshop_sigma_generate_messages"
 	@echo "... acroba_workshop_sigma_generate_messages_cpp"

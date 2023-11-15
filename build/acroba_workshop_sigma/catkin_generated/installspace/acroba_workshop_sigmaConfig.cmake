@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/install/lib;/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/lib;/users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/lib;/Users/mr_niass/miniconda3/envs/ROS/lib)
+    foreach(path /Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/install/lib;/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/lib;/Users/mr_niass/miniconda3/envs/ROS/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

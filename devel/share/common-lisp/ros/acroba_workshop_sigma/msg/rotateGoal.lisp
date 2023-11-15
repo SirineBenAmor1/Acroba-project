@@ -4,9 +4,9 @@
 (cl:in-package acroba_workshop_sigma-msg)
 
 
-;//! \htmlinclude rotateGoal.msg.html
+;//! \htmlinclude RotateGoal.msg.html
 
-(cl:defclass <rotateGoal> (roslisp-msg-protocol:ros-message)
+(cl:defclass <RotateGoal> (roslisp-msg-protocol:ros-message)
   ((turtle_name
     :reader turtle_name
     :initarg :turtle_name
@@ -34,40 +34,40 @@
     :initform cl:nil))
 )
 
-(cl:defclass rotateGoal (<rotateGoal>)
+(cl:defclass RotateGoal (<RotateGoal>)
   ())
 
-(cl:defmethod cl:initialize-instance :after ((m <rotateGoal>) cl:&rest args)
+(cl:defmethod cl:initialize-instance :after ((m <RotateGoal>) cl:&rest args)
   (cl:declare (cl:ignorable args))
-  (cl:unless (cl:typep m 'rotateGoal)
-    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name acroba_workshop_sigma-msg:<rotateGoal> is deprecated: use acroba_workshop_sigma-msg:rotateGoal instead.")))
+  (cl:unless (cl:typep m 'RotateGoal)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name acroba_workshop_sigma-msg:<RotateGoal> is deprecated: use acroba_workshop_sigma-msg:RotateGoal instead.")))
 
 (cl:ensure-generic-function 'turtle_name-val :lambda-list '(m))
-(cl:defmethod turtle_name-val ((m <rotateGoal>))
+(cl:defmethod turtle_name-val ((m <RotateGoal>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader acroba_workshop_sigma-msg:turtle_name-val is deprecated.  Use acroba_workshop_sigma-msg:turtle_name instead.")
   (turtle_name m))
 
 (cl:ensure-generic-function 'speed-val :lambda-list '(m))
-(cl:defmethod speed-val ((m <rotateGoal>))
+(cl:defmethod speed-val ((m <RotateGoal>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader acroba_workshop_sigma-msg:speed-val is deprecated.  Use acroba_workshop_sigma-msg:speed instead.")
   (speed m))
 
 (cl:ensure-generic-function 'distance-val :lambda-list '(m))
-(cl:defmethod distance-val ((m <rotateGoal>))
+(cl:defmethod distance-val ((m <RotateGoal>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader acroba_workshop_sigma-msg:distance-val is deprecated.  Use acroba_workshop_sigma-msg:distance instead.")
   (distance m))
 
 (cl:ensure-generic-function 'angle-val :lambda-list '(m))
-(cl:defmethod angle-val ((m <rotateGoal>))
+(cl:defmethod angle-val ((m <RotateGoal>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader acroba_workshop_sigma-msg:angle-val is deprecated.  Use acroba_workshop_sigma-msg:angle instead.")
   (angle m))
 
 (cl:ensure-generic-function 'isForward-val :lambda-list '(m))
-(cl:defmethod isForward-val ((m <rotateGoal>))
+(cl:defmethod isForward-val ((m <RotateGoal>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader acroba_workshop_sigma-msg:isForward-val is deprecated.  Use acroba_workshop_sigma-msg:isForward instead.")
   (isForward m))
-(cl:defmethod roslisp-msg-protocol:serialize ((msg <rotateGoal>) ostream)
-  "Serializes a message object of type '<rotateGoal>"
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <RotateGoal>) ostream)
+  "Serializes a message object of type '<RotateGoal>"
   (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'turtle_name))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
@@ -91,8 +91,8 @@
     (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'isForward) 1 0)) ostream)
 )
-(cl:defmethod roslisp-msg-protocol:deserialize ((msg <rotateGoal>) istream)
-  "Deserializes a message object of type '<rotateGoal>"
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <RotateGoal>) istream)
+  "Deserializes a message object of type '<RotateGoal>"
     (cl:let ((__ros_str_len 0))
       (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
@@ -122,25 +122,25 @@
     (cl:setf (cl:slot-value msg 'isForward) (cl:not (cl:zerop (cl:read-byte istream))))
   msg
 )
-(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<rotateGoal>)))
-  "Returns string type for a message object of type '<rotateGoal>"
-  "acroba_workshop_sigma/rotateGoal")
-(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'rotateGoal)))
-  "Returns string type for a message object of type 'rotateGoal"
-  "acroba_workshop_sigma/rotateGoal")
-(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<rotateGoal>)))
-  "Returns md5sum for a message object of type '<rotateGoal>"
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<RotateGoal>)))
+  "Returns string type for a message object of type '<RotateGoal>"
+  "acroba_workshop_sigma/RotateGoal")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'RotateGoal)))
+  "Returns string type for a message object of type 'RotateGoal"
+  "acroba_workshop_sigma/RotateGoal")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<RotateGoal>)))
+  "Returns md5sum for a message object of type '<RotateGoal>"
   "5063b95f0bacef3cca474f3440a82c74")
-(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'rotateGoal)))
-  "Returns md5sum for a message object of type 'rotateGoal"
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'RotateGoal)))
+  "Returns md5sum for a message object of type 'RotateGoal"
   "5063b95f0bacef3cca474f3440a82c74")
-(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<rotateGoal>)))
-  "Returns full string definition for message of type '<rotateGoal>"
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<RotateGoal>)))
+  "Returns full string definition for message of type '<RotateGoal>"
   (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%#Define goal's message~%string turtle_name~%float32 speed~%float32 distance~%float32 angle~%bool isForward~%~%~%"))
-(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'rotateGoal)))
-  "Returns full string definition for message of type 'rotateGoal"
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'RotateGoal)))
+  "Returns full string definition for message of type 'RotateGoal"
   (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%#Define goal's message~%string turtle_name~%float32 speed~%float32 distance~%float32 angle~%bool isForward~%~%~%"))
-(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <rotateGoal>))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <RotateGoal>))
   (cl:+ 0
      4 (cl:length (cl:slot-value msg 'turtle_name))
      4
@@ -148,9 +148,9 @@
      4
      1
 ))
-(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <rotateGoal>))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <RotateGoal>))
   "Converts a ROS message object to a list"
-  (cl:list 'rotateGoal
+  (cl:list 'RotateGoal
     (cl:cons ':turtle_name (turtle_name msg))
     (cl:cons ':speed (speed msg))
     (cl:cons ':distance (distance msg))

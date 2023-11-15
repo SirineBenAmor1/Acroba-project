@@ -15,7 +15,7 @@ let turtlesim = _finder('turtlesim');
 
 //-----------------------------------------------------------
 
-class rotateFeedback {
+class RotateFeedback {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
@@ -32,16 +32,16 @@ class rotateFeedback {
   }
 
   static serialize(obj, buffer, bufferOffset) {
-    // Serializes a message object of type rotateFeedback
+    // Serializes a message object of type RotateFeedback
     // Serialize message field [pose]
     bufferOffset = turtlesim.msg.Pose.serialize(obj.pose, buffer, bufferOffset);
     return bufferOffset;
   }
 
   static deserialize(buffer, bufferOffset=[0]) {
-    //deserializes a message object of type rotateFeedback
+    //deserializes a message object of type RotateFeedback
     let len;
-    let data = new rotateFeedback(null);
+    let data = new RotateFeedback(null);
     // Deserialize message field [pose]
     data.pose = turtlesim.msg.Pose.deserialize(buffer, bufferOffset);
     return data;
@@ -53,7 +53,7 @@ class rotateFeedback {
 
   static datatype() {
     // Returns string type for a message object
-    return 'acroba_workshop_sigma/rotateFeedback';
+    return 'acroba_workshop_sigma/RotateFeedback';
   }
 
   static md5sum() {
@@ -85,7 +85,7 @@ class rotateFeedback {
     if (typeof msg !== 'object' || msg === null) {
       msg = {};
     }
-    const resolved = new rotateFeedback(null);
+    const resolved = new RotateFeedback(null);
     if (msg.pose !== undefined) {
       resolved.pose = turtlesim.msg.Pose.Resolve(msg.pose)
     }
@@ -97,4 +97,4 @@ class rotateFeedback {
     }
 };
 
-module.exports = rotateFeedback;
+module.exports = RotateFeedback;

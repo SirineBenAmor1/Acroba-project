@@ -14,7 +14,7 @@ const _getByteLength = _ros_msg_utils.getByteLength;
 
 //-----------------------------------------------------------
 
-class rotateGoal {
+class RotateGoal {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
@@ -59,7 +59,7 @@ class rotateGoal {
   }
 
   static serialize(obj, buffer, bufferOffset) {
-    // Serializes a message object of type rotateGoal
+    // Serializes a message object of type RotateGoal
     // Serialize message field [turtle_name]
     bufferOffset = _serializer.string(obj.turtle_name, buffer, bufferOffset);
     // Serialize message field [speed]
@@ -74,9 +74,9 @@ class rotateGoal {
   }
 
   static deserialize(buffer, bufferOffset=[0]) {
-    //deserializes a message object of type rotateGoal
+    //deserializes a message object of type RotateGoal
     let len;
-    let data = new rotateGoal(null);
+    let data = new RotateGoal(null);
     // Deserialize message field [turtle_name]
     data.turtle_name = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [speed]
@@ -98,7 +98,7 @@ class rotateGoal {
 
   static datatype() {
     // Returns string type for a message object
-    return 'acroba_workshop_sigma/rotateGoal';
+    return 'acroba_workshop_sigma/RotateGoal';
   }
 
   static md5sum() {
@@ -125,7 +125,7 @@ class rotateGoal {
     if (typeof msg !== 'object' || msg === null) {
       msg = {};
     }
-    const resolved = new rotateGoal(null);
+    const resolved = new RotateGoal(null);
     if (msg.turtle_name !== undefined) {
       resolved.turtle_name = msg.turtle_name;
     }
@@ -165,4 +165,4 @@ class rotateGoal {
     }
 };
 
-module.exports = rotateGoal;
+module.exports = RotateGoal;

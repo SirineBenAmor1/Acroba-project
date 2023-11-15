@@ -12,7 +12,7 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel;/users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel;/Users/mr_niass/miniconda3/envs/ROS'.split(';'):
+    for workspace in '/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel;/Users/mr_niass/miniconda3/envs/ROS'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3.9/site-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)

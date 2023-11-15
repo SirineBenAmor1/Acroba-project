@@ -39,10 +39,49 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/action" TYPE FILE FILES
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Patrol.action"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Follow.action"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Lead.action"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Move.action"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Move2.action"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/rotate.action"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/PatrolSkill.action"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/action/Rotate.action"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolAction.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolActionGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolActionResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolActionFeedback.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolFeedback.msg"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowAction.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowActionGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowActionResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowActionFeedback.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/FollowFeedback.msg"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadAction.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadActionGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadActionResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadActionFeedback.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/LeadFeedback.msg"
     )
 endif()
 
@@ -72,18 +111,6 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateAction.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateActionGoal.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateActionResult.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateActionFeedback.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateGoal.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateResult.msg"
-    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/rotateFeedback.msg"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillAction.msg"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillActionGoal.msg"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillActionResult.msg"
@@ -91,6 +118,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillGoal.msg"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillResult.msg"
     "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/PatrolSkillFeedback.msg"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/acroba_workshop_sigma/msg" TYPE FILE FILES
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateAction.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateActionGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateActionResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateActionFeedback.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateGoal.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateResult.msg"
+    "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/devel/share/acroba_workshop_sigma/msg/RotateFeedback.msg"
     )
 endif()
 
@@ -143,6 +182,14 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/acroba_workshop_sigma" TYPE PROGRAM FILES "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/build/acroba_workshop_sigma/catkin_generated/installspace/spawn_turtle.py")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/acroba_workshop_sigma" TYPE PROGRAM FILES "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/build/acroba_workshop_sigma/catkin_generated/installspace/sk_patrol.py")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/acroba_workshop_sigma" TYPE PROGRAM FILES "/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/build/acroba_workshop_sigma/catkin_generated/installspace/test_patrol.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

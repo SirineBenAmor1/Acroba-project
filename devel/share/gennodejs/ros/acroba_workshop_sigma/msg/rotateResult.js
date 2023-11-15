@@ -14,7 +14,7 @@ const _getByteLength = _ros_msg_utils.getByteLength;
 
 //-----------------------------------------------------------
 
-class rotateResult {
+class RotateResult {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
@@ -24,14 +24,14 @@ class rotateResult {
   }
 
   static serialize(obj, buffer, bufferOffset) {
-    // Serializes a message object of type rotateResult
+    // Serializes a message object of type RotateResult
     return bufferOffset;
   }
 
   static deserialize(buffer, bufferOffset=[0]) {
-    //deserializes a message object of type rotateResult
+    //deserializes a message object of type RotateResult
     let len;
-    let data = new rotateResult(null);
+    let data = new RotateResult(null);
     return data;
   }
 
@@ -41,7 +41,7 @@ class rotateResult {
 
   static datatype() {
     // Returns string type for a message object
-    return 'acroba_workshop_sigma/rotateResult';
+    return 'acroba_workshop_sigma/RotateResult';
   }
 
   static md5sum() {
@@ -63,9 +63,9 @@ class rotateResult {
     if (typeof msg !== 'object' || msg === null) {
       msg = {};
     }
-    const resolved = new rotateResult(null);
+    const resolved = new RotateResult(null);
     return resolved;
     }
 };
 
-module.exports = rotateResult;
+module.exports = RotateResult;

@@ -6,17 +6,17 @@ from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 
 
-class rotateAction:
+class RotateAction:
     # create messages that are used to publish feedback/result
-    feedback = acroba_workshop_sigma.msg.rotateFeedback()
-    result = acroba_workshop_sigma.msg.rotateResult()
+    feedback = acroba_workshop_sigma.msg.RotateFeedback()
+    result = acroba_workshop_sigma.msg.RotateResult()
 
     def __init__(self, name):
         self.vel_msg = Twist()
         self._action_name = name
         self._as = actionlib.SimpleActionServer(
             self._action_name,
-            acroba_workshop_sigma.msg.rotateAction,
+            acroba_workshop_sigma.msg.RotateAction,
             execute_cb=self.execute_cb,
             auto_start=False,
         )
@@ -87,6 +87,6 @@ class rotateAction:
 
 
 if __name__ == "__main__":
-    rospy.init_node("rotate")
-    server = rotateAction(rospy.get_name())
+    rospy.init_node("Rotate")
+    server = RotateAction(rospy.get_name())
     rospy.spin()

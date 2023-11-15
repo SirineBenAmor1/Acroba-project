@@ -3,7 +3,7 @@
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/skill_test.py'
+python_script = '/Users/mr_niass/miniconda3/envs/ROS/acroba_workshop_ws/src/acroba_workshop_sigma/scripts/skills/skill_test.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

@@ -2,4 +2,4 @@
 
 Header header
 actionlib_msgs/GoalStatus status
-rotateFeedback feedback
+RotateFeedback feedback

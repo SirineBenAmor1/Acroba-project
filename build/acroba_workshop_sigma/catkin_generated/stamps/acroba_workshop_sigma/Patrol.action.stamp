@@ -1,0 +1,15 @@
+# Define goal's message
+string turtle_name
+float32 speed_move
+float32 distance
+bool isForward
+float32 speed_rotate
+float32 degrees
+bool isClockwise
+---
+# Define result's message
+---
+# Define feedback's message
+turtlesim/Pose pose
+
+#http://wiki.ros.org/actionlib
