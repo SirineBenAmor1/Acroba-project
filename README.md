@@ -17,7 +17,7 @@ http://wiki.ros.org/fr/ROS/Tutorials
 
     mkdir acroba_workshop_ws && cd acroba_workshop_ws
     mkdir src && cd src
-    git clone https://github.com/bastienm23/ACROBA_Workshop_SIGMA
+    git clone [https://github.com/SirineBenAmor1/Acroba-project]
     cd ..
     catkin_make
 
