@@ -15,12 +15,11 @@ def main():
     client.wait_for_server()
     goal = acroba_workshop_sigma.msg.rotateGoal()
     rate = rospy.Rate(60)
-    goal.speed = 0.9
-    goal.distance = 158
-    goal.angle = 5
+    goal.speed = 1
+    goal.degrees = 1.6
     #while not rospy.is_shutdown():
     goal.turtle_name = "turtle1"
-    goal.isForward = True
+    goal.isClockwise = True
     client.send_goal(goal)
     client.wait_for_result()
     rate.sleep()

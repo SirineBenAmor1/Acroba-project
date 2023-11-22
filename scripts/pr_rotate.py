@@ -13,9 +13,9 @@ class rotateAction:
 
     def __init__(self, name):
         self.vel_msg = Twist()
-        self._action_name = rotate
+        self._action_name = name
         self._as = actionlib.SimpleActionServer(
-            "rotate",
+            self._action_name,
             acroba_workshop_sigma.msg.rotateAction,
             execute_cb=self.execute_cb,
             auto_start=False,
@@ -36,27 +36,23 @@ class rotateAction:
         # Create pose subscriber
         rospy.Subscriber("/"+goal.turtle_name+"/pose", Pose, self.pose_feedback_callback)
 
-        if (goal.speed <= 0 or goal.distance <= 0 or type(goal.isForward) != bool):
+        if (goal.speed <= 0 or goal.degrees <= 0 or type(goal.isClockwise) != bool):
             self._as.set_aborted()
             if goal.speed <= 0:
                 rospy.loginfo("Aborted: speed value should be > 0")
-            if goal.distance <= 0:
-                rospy.loginfo("Aborted: distance value should be > 0")
-            if goal.angle <= 0:
+            if goal.degrees <= 0:
                 rospy.loginfo("Aborted: angle value should be > 0")
-            if type(goal.isForward) != bool:
-                rospy.loginfo("Aborted: isForward value should be True or False")
+            if type(goal.isClockwise != bool):
+                rospy.loginfo("Aborted: isisclockwise value should be True or False")
 
         else:
             success = True
             rospy.loginfo("Let's move your robot")
             
             # Checking if the movement is forward or backward
-            if goal.isForward:
-                self.vel_msg.linear.x = abs(goal.speed)
+            if goal.isClockwise:
                 self.vel_msg.angular.z = abs(goal.speed)
             else:
-                self.vel_msg.linear.x = abs(goal.speed)
                 self.vel_msg.angular.z = -abs(goal.speed)
 
             # Setting the current time for distance calculus
@@ -65,13 +61,13 @@ class rotateAction:
             t0 = rospy.Time.now().to_sec()         
 
             # Loop to move the turtle in an specified distance
-            while(current_distance < goal.distance and current_angle < goal.angle ):
+            while(current_angle < goal.degrees ):
                 # Publish the velocity
                 velocity_publisher.publish(self.vel_msg)
                 # Takes actual time to velocity calculus
                 t1 = rospy.Time.now().to_sec()
                 # Calculates distancePoseStamped
-                current_distance = goal.speed*(t1-t0)
+                #current_distance = goal.speed*(t1-t0)
                 current_angle = goal.speed*(t1-t0)
             # After the loop, stops the robot
             self.vel_msg.angular.z = 0

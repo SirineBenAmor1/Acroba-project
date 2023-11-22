@@ -13,9 +13,9 @@ class MoveAction:
 
     def __init__(self, name):
         self.vel_msg = Twist()
-        self._action_name = Move
+        self._action_name = name
         self._as = actionlib.SimpleActionServer(
-            "Move",
+            self._action_name,
             acroba_workshop_sigma.msg.MoveAction,
             execute_cb=self.execute_cb,
             auto_start=False,

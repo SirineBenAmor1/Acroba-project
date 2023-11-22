@@ -3,14 +3,14 @@ import rospy
 import actionlib
 import acroba_workshop_sigma.msg
 
-class PatrolSkillAction:
+class PatrolSkill:
     """
     Class for the PatrolSkill skill.
     """
 
     # Create messages that are used to publish feedback/result
-    feedback = acroba_workshop_sigma.msg.PatrolSkillFeedback()
-    result = acroba_workshop_sigma.msg.PatrolSkillResult()
+    feedback_= acroba_workshop_sigma.msg.PatrolSkillFeedback()
+    result_= acroba_workshop_sigma.msg.PatrolSkillResult()
 
     # Create the action clients for the Move and rotate actions
     client_move = actionlib.SimpleActionClient("Move", acroba_workshop_sigma.msg.MoveAction)
@@ -46,49 +46,54 @@ class PatrolSkillAction:
         # Define the goal messages for Move and rotate actions
         self.goal_move.turtle_name = goal.turtle_name
         self.goal_move.speed = goal.move_speed
-        self.goal_rotate.turtle_name = goal.turtle_name
-        self.goal_rotate.speed = goal.move_speed  # You can adjust the speed as needed
-
-        for _ in range(goal.repetitions):
-            # Send the Move goal (forward movement)
-            self.goal_move.distance = goal.move_distance
-            self.goal_move.isForward = True
-            self.client_move.send_goal(self.goal_move)
-            self.client_move.wait_for_result()
-            feedback = acroba_workshop_sigma.msg.PatrolSkillFeedback()
-            feedback.pose = self.client_move.get_result()
-            self._as.publish_feedback(feedback)
-
+        self.goal_move.distance = goal.move_distance
+        self.goal_move.isForward = goal.isForward
+        
+        self.client_move.send_goal(self.goal_move)
+   
+        while self.client_move.get_result() is None:
             if self._as.is_preempt_requested() or rospy.is_shutdown():
                 rospy.loginfo("%s: Preempted" % self._action_name)
                 self.client_move.cancel_goal()
-                self.client_rotate.cancel_goal()
+                self._as.set_preempted()
                 success = False
                 break
+            rate.sleep()
 
-            # Send the rotate goal (turn right)
-            self.goal_rotate.distance = goal.rotate_angle
-            self.goal_rotate.isForward = True  # Adjust as needed
-            self.client_rotate.send_goal(self.goal_rotate)
-            self.client_rotate.wait_for_result()
-            feedback = acroba_workshop_sigma.msg.PatrolSkillFeedback()
-            feedback.pose = self.client_rotate.get_result()
-            self._as.publish_feedback(feedback)
-
-            if self._as.is_preempt_requested() or rospy.is_shutdown():
-                rospy.loginfo("%s: Preempted" % self._action_name)
-                self.client_move.cancel_goal()
-                self.client_rotate.cancel_goal()
-                success = False
-                break
-
+        if self.client_move.get_state() == 4:  # if goal aborted
+            success = False
+            rospy.loginfo("%s: Aborted" % self._action_name)
+            self._as.set_aborted()
         if success:
-            rospy.loginfo("Patrol completed")
-            self.result.success = True
-            self._as.set_succeeded(self.result)
+            # Send the rotate goal (turn right)
+            self.goal_rotate.turtle_name = goal.turtle_name
+            self.goal_rotate.isClockwise = goal.isClockwise # Adjust 
+            self.goal_rotate.speed = goal.speed_rotate
+            self.goal_rotate.degrees = goal.degrees
+ 
+            self.client_rotate.send_goal(self.goal_rotate)
+
+            while self.client_rotate.get_result() is None:
+                if self._as.is_preempt_requested() or rospy.is_shutdown():
+                    rospy.loginfo("%s: Preempted" % self._action_name)
+                    self.client_rotate.cancel_goal()
+                    self._as.set_preempted()
+                    success = False
+                    break
+                rate.sleep()
+
+            if self.client_rotate.get_state() == 4:  # if goal aborted
+                success = False
+                rospy.loginfo("%s: Aborted" % self._action_name)
+                self._as.set_aborted()
+          
+        if success:
+            rospy.loginfo("%s: Succeeded" % self._action_name)
+            self._as.set_succeeded(self.result_)
+
 
 if __name__ == "__main__":
     rospy.init_node("PatrolSkill")
-    server = PatrolSkillAction(rospy.get_name())
+    server = PatrolSkill(rospy.get_name())
     rospy.spin()
 

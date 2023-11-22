@@ -14,7 +14,7 @@ def main():
     client.wait_for_server()
     goal = acroba_workshop_sigma.msg.MoveGoal()
     rate = rospy.Rate(60)
-    goal.speed = 0.9
+    goal.speed = 1
     goal.distance = 2
     #while not rospy.is_shutdown():
     goal.turtle_name = "turtle1"

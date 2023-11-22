@@ -1,11 +1,13 @@
 # The action goal for creating a rectangle
 string turtle_name
-float32 move_distance
-float32 move_speed
-float32 rotate_angle
-int32 repetitions
+int32 move_distance
+int32 move_speed
+float32 degrees
+bool isForward
+bool isClockwise
+int32 speed_rotate
 ---
-bool success
+# Define result's message
 ---
 # Define feedback's message
-turtlesim/Pose pose
+

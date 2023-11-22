@@ -15,7 +15,7 @@ class PatrolSkill:
             auto_start=False,
         )
         self._as.start()
-
+        rospy.loginfo("Server ready")
         # Create a publisher for the pr_move and pr_rotate primitives
         self.pub_primitive = rospy.Publisher("/primitive_command", String, queue_size=10)
 
