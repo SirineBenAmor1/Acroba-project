@@ -1,0 +1,21 @@
+controller_list:
+  - name: fake_panda_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+  - name: fake_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_finger_joint
+  - name: fake_support_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+initial:  # Define initial robot poses per group
+  - group: panda_arm
+    pose: home
