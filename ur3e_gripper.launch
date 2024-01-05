@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load URDF file for your robot -->
+  <param name="robot_description" textfile="$(find my_launch_package)/sigma_cell.urdf"/>
+
+  <!-- Launch RViz with the RobotModel display -->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+</launch>
+
