@@ -1,0 +1,22 @@
+{
+    "Stator": {
+        "center": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "diameter": 0.3
+    },
+    "Tooth": {
+        "thickness": 0.04,
+        "width": 0.03,
+        "diameters": {
+            "internal": 0.20,
+            "external": 0.25
+        }
+    },
+    "Turns": {
+        "number": 10,
+        "clockwise": true
+    }
+}

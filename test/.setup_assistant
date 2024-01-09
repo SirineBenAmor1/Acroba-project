@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /home/sirineba/acroba_workshop_ws/src/sigma_test.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/sigma_cell.srdf
+  CONFIG:
+    author_name: sirine
+    author_email: sirinebenamor66@gmail.com
+    generated_timestamp: 1704726208

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="sigma_cell">
+
+  <!-- World Reference Frame -->
+  <link name="world"/>
+  
+  <!-- Include UR3e description -->
+  <xacro:include filename="$(find ur_description)/urdf/ur3e.xacro"/>
+  <!-- Base joint -->
+  <joint name="base_joint" type="fixed">
+    <parent link="world" />
+    <child link="base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Include the OnRobot 2FG7 gripper description -->
+  <xacro:include filename="$(find onrobot_2fg7_description)/urdf/onrobot_2fg7.xacro" />
+  <xacro:onrobot_2fg7_gripper prefix="gripper_" finger_configuration="inwards"/>
+  
+  <!-- Gripper base joint -->
+  <joint name="gripper_base_joint" type="fixed">
+    <parent link="tool0" />
+    <child link="gripper_base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  
+  
+  <!-- Gripper link with STL visualization -->
+  <link name="cell_link">
+    <visual>
+      <origin xyz="-0.27 0.05 -0.062" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://support/meshes/support_robot.stl"/>
+      </geometry>
+      <material name="cell">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.27 0.05 -0.062" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://support/meshes/support_robot.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Cell joint -->
+  <joint name="cell_joint" type="fixed">
+    <parent link="world" />
+    <child link="cell_link" />
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+ 
+<!-- stator with STL visualization -->
+
+<link name="stator_link">
+  <visual>
+    <origin xyz="0.5 0 0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://support/meshes/stator.stl" scale="0.0024 0.0024 0.0024"/>
+    </geometry>
+    <material name="stator">
+      <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+  </visual>
+  <!-- Remove the collision block to disable collision checking for this link -->
+  <!--<collision>
+    <origin xyz="0.5 0 0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://support/meshes/stator.stl" scale="0.0024 0.0024 0.0024"/>
+    </geometry>
+  </collision>-->
+</link>
+
+  <!-- Cell joint -->
+  <joint name="stator_joint" type="fixed">
+    <parent link="world" />
+    <child link="stator_link" />
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  
+  
+</robot>
+

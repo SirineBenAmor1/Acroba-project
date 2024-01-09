@@ -1,0 +1,25 @@
+{
+    "Magnet": {
+        "length": 30,
+        "width": 15,
+        "thickness": 10
+    },
+    "picking": {
+        "first_magnet": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "spacing": {
+            "vertical": 20,
+            "horizontal": 20
+        },
+        "number_of_row": 5,
+        "magnet_per_row": 6
+    },
+    "placing": {
+        "x": 200,
+        "y": 300,
+        "z": 0
+    }
+}
